@@ -1,0 +1,20 @@
+ext {
+
+    minSDK = 21
+    targetSDK = 30
+    compileSDK = 30
+
+    buildTools = "30.0.2"
+
+    //Lifecycle
+    lifecycleVersion = '2.2.0'
+
+    //Koin
+    koinVersion = '1.0.2'
+
+    dependencies = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            koin: "org.koin:koin-android:$koinVersion",
+            lifecycle: "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+    ]
+}

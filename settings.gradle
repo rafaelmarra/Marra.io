@@ -1,2 +1,6 @@
+include ':home-io'
+include ':api'
+include ':base'
+include ':home-presentation'
 include ':app'
 rootProject.name = "Marra.io"

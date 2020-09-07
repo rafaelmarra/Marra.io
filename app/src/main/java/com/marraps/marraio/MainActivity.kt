@@ -1,11 +1,9 @@
 package com.marraps.marraio
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.marraps.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+class MainActivity : BaseActivity() {
+
+    override val activityLayout = R.layout.activity_main
+
 }
