@@ -5,6 +5,9 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "com.marraps.marraio"
@@ -26,6 +29,7 @@ android {
 
 dependencies {
     implementation project(':base')
+    implementation project(':home-presentation')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.1'
