@@ -1,3 +1,5 @@
+include ':utils'
+include ':models'
 include ':home-io'
 include ':api'
 include ':base'

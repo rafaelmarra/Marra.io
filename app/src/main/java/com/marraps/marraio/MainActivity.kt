@@ -7,17 +7,18 @@ import com.marraps.marraio.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
 
-    override val activityBinding = ActivityMainBinding.inflate(layoutInflater)
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         startHomeFragment()
     }
 
     private fun startHomeFragment() {
-        replaceFragmentNoStack(activityBinding.mainRootContainer, HomeFragment())
-
+        replaceFragmentNoStack(binding.mainRootContainer, HomeFragment())
     }
-
 }
